@@ -122,18 +122,16 @@ def get_mecab_library_directory():
         mecab_config_path, '--libs-only-L']).decode('utf-8').strip()
 
 
-with open('README.md', 'r', encoding='utf-8') as input_file:
-    long_description = input_file.read()
+#with open('README.md', 'r', encoding='utf-8') as input_file:
+#    long_description = input_file.read()
 
 setup(
     name='python-mecab-ko',
     version='1.0.11',
-    url='https://github.com/jonghwanhyeon/python-mecab-ko',
+    url='https://github.com/orbisai/python-mecab-ko',
     author='Jonghwan Hyeon',
     author_email='hyeon0145@gmail.com',
     description='A python binding for mecab-ko',
-    long_description=long_description,
-    long_description_content_type='text/markdown',
     license='BSD',
     keywords='mecab mecab-ko',
     classifiers=[
