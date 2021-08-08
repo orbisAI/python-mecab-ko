@@ -10,7 +10,7 @@ from setuptools.command.build_ext import build_ext
 
 # Based on https://github.com/pybind/python_example
 
-mecab_config_path = os.path.join(sys.prefix, 'bin', 'mecab-config')
+mecab_config_path = os.path.join('/usr/local/', 'bin', 'mecab-config')
 
 class BuildExtensionCommand(build_ext):
 
